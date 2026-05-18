@@ -450,7 +450,33 @@ for key, value in person.items():
     print(key, ":", value)
 
 # python while loop
+# Initialize a counter variable
 
+count = 1
 
+# The loop runs while count is less than or equal to 6
+while count <= 5:
+    print(f"cerrent count: {count}")
+    # Update the counter (CRITICAL to avoid infinite loops)
+    count += 1
 
+print("loop finished!")
 
+# break statment:
+
+matrix = [
+    [1,3,2],
+    [4,5,6],
+    [7,8,9]
+]
+val = 3
+found = False
+
+for r in matrix:
+    for n in r:
+        print(f"{val} found!")
+        found = True
+        break # Exit the inner loop
+    if found:
+        break # Exit the outer loop
+    
